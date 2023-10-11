@@ -32,9 +32,10 @@ img {
 
 /** ============ HEADER ============ */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
 }
 
 .header-container {
@@ -207,7 +208,7 @@ img {
 
 /** ============= ADVANTAGES ============= */
 .advantages {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -224,43 +225,34 @@ img {
 }
 .advantages-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-wrap: wrap;
 }
 .advantages-item {
-  width: calc((100% - 72px) / 4);
-}
-
-.advantages-icon-box {
-  background-color: #f4f4fd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-.advantages-icon {
-  width: 264px;
-  height: 112px;
-  padding: 24px 100px;
-  border: 1px solid;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .advantages-subtitle {
   color: #2e2f42;
-  font-size: 20px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
+  align-self: stretch;
 }
+
 .advantages-title-text {
   color: #434455;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  align-self: stretch;
 }
 
 /** =============================== */
@@ -791,4 +783,75 @@ img {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: #404bbf;
+}
+
+/** =============================== */
+
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .advantages-list {
+    gap: 72px 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-subtitle {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1188px;
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advantages-subtitle {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .advantages-title-text {
+    font-weight: 400;
+  }
+
+  .advantages-icon-box {
+    background-color: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-icon {
+    width: 264px;
+    height: 112px;
+    padding: 24px 100px;
+    border: 1px solid;
+  }
 }
