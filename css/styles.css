@@ -34,7 +34,7 @@ img {
 .container {
   max-width: 1158px;
   margin: 0 auto;
-padding: 0 15px;
+
   width: 100%;
 }
 
@@ -837,12 +837,11 @@ padding: 0 15px;
   }
 
   .advantages-list {
-    gap: 24px;
+    gap: 64px 24px;
   }
 
   .advantages-item {
     width: calc((100% - 72px) / 4);
-     flex-direction: row;
   }
 
   .advantages-subtitle {
@@ -879,7 +878,8 @@ padding: 0 15px;
   .team-title-list {
     gap: 24px;
   }
+
   .team-title-item {
-    
+    width: calc((100% - 72px) / 4);
   }
 }
