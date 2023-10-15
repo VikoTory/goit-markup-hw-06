@@ -152,7 +152,7 @@
       <section class="solutions">
         <div class="container solutions-container">
           <h1 class="solutions-title">
-            Effective Solutions <br />
+            Effective Solutions
             for Your Business
           </h1>
           <button class="solutions-btn" type="button">Order Service</button>
@@ -216,12 +216,15 @@
       </section>
       <!-- Team -->
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-title-list">
             <li class="team-title-item">
-              <img
-                src="./images/Mark-Guerrero-min.jpg"
+              <img srcset="
+                      ./images/Mark-Guerrero.jpg    1x,
+                      ./images/Mark-Guerrero-2x.jpg 2x
+                    "
+                src="./images/Mark-Guerrero.jpg"
                 alt="Mark-Guerrero"
                 width="264"
                 height="260"
@@ -262,8 +265,11 @@
               </div>
             </li>
             <li class="team-title-item">
-              <img
-                src="./images/Tom-Ford-min.jpg"
+              <img srcset="
+                      ./images/Tom-Ford.jpg    1x,
+                      ./images/Tom-Ford-2x.jpg 2x
+                    "
+                src="./images/Tom-Ford.jpg"
                 alt="Tom-Ford"
                 width="264"
                 height="260"
@@ -304,8 +310,11 @@
               </div>
             </li>
             <li class="team-title-item">
-              <img
-                src="./images/Camila-Garcia-min.jpg"
+              <img srcset="
+                      ./images/Camila-Garcia.jpg    1x,
+                      ./images/Camila-Garcia-2x.jpg 2x
+                    "
+                src="./images/Camila-Garcia.jpg"
                 alt="Camila-Garcia"
                 width="264"
                 height="260"
@@ -346,8 +355,11 @@
               </div>
             </li>
             <li class="team-title-item">
-              <img
-                src="./images/Daniel-Wilson-min.jpg"
+              <img srcset="
+                      ./images/Daniel-Wilson.jpg    1x,
+                      ./images/Daniel-Wilson-2x.jpg 2x
+                    "
+                src="./images/Daniel-Wilson.jpg"
                 alt="Daniel-Wilson"
                 width="264"
                 height="260"
@@ -726,7 +738,7 @@
 
     <!-- Modal -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -800,8 +812,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-link" href="">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a class="modal-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-form-btn">Send</button>

@@ -40,6 +40,7 @@ address {
   max-width: 1158px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 16px;
 }
 
 .header-container {
@@ -220,9 +221,9 @@ address {
 .line-contacts {
 }
 .mob-address {
+  margin-bottom: 48px;
 }
 .mob-address-list {
-  margin-bottom: 48px;
 }
 .mob-address-item {
   margin-bottom: 24px;
@@ -232,14 +233,15 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.2px;
+  margin-bottom: auto;
 }
 .tel {
-  color: #434455;
+  color: #4d5ae5;
   list-style-type: none;
 }
 
 .mail {
-  color: #4d5ae5;
+  color: #434455;
   list-style-type: none;
 }
 
@@ -324,7 +326,7 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin: 0 auto 72px;
-  max-width: 288px;
+  max-width: 217px;
 }
 .solutions-btn {
   color: #fff;
@@ -378,8 +380,6 @@ address {
 }
 .advantages-item {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .advantages-icon-box {
@@ -417,8 +417,9 @@ address {
   background-color: #f4f4fd;
   padding-top: 96px;
   padding-bottom: 96px;
-  padding-left: 28px;
-  padding-right: 28px;
+}
+.team-container {
+  width: 296px;
 }
 
 .team-title {
@@ -620,24 +621,26 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 0 102px 0 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer .footer-container-link {
   margin-bottom: 16px;
-  display: inline-block;
+  
 }
 
 .footer-container-logo {
   color: #f4f4fd;
 }
+
 .footer-container-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  padding: 0 16px;
 }
+
 .footer-soc-box {
 }
 
@@ -825,8 +828,6 @@ address {
 
 .modal-field {
   margin-bottom: 8px;
-  width: 256px;
-  height: 58px;
 }
 
 .modal-label {
@@ -836,6 +837,10 @@ address {
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
+}
+
+.modal-link {
+  
 }
 
 .input-wrap {
@@ -892,6 +897,8 @@ address {
 
 .modal-field-check {
   margin-bottom: 24px;
+  flex-shrink: 0;
+   
 }
 
 .modal-textarea:focus {
@@ -909,7 +916,9 @@ address {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
 }
+
 .check-text a {
   color: #4d5ae5;
   text-decoration-line: underline;
@@ -1032,23 +1041,28 @@ address {
     text-align: left;
   }
 
+  .team-container {
+    width: 584px;
+  }
+
   .team-title-list {
     padding-right: 0;
+    gap: 72px 24px;
   }
   .footer-container {
     align-items: flex-start;
-  }
-
-  .footer-container-box {
+    width: 584px;
   }
 
   .footer-container-link {
-    padding: 0 24px;
   }
 
   .footer-container-text {
     width: 264px;
-    height: 72px;
+  }
+
+  .footer-soc-text {
+    text-align: left;
   }
 
   .subscribe-title {
@@ -1060,25 +1074,24 @@ address {
     gap: 24px;
   }
 
-.modal {
-  width: 408px;
-  height: 584px;
-}
+  .modal {
+    width: 408px;
+    height: 584px;
+  }
 
   .modal-title {
     width: 360px;
     height: 24px;
   }
 
-.modal-field {
-  width: 360px;
+  .modal-field {
+    width: 360px;
     height: 58px;
-}
+  }
 
-.check-text {
-width: 338px;
-}
-
+  .check-text {
+    width: 338px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1088,7 +1101,7 @@ width: 338px;
   }
 
   .header-container {
-    padding: 0 15px;
+   
   }
 
   .header-logo {
@@ -1175,13 +1188,18 @@ width: 338px;
     justify-content: center;
     border-radius: 4px;
     margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    border: 1px solid;
+
   }
 
   .advantages-icon {
-    width: 264px;
-    height: 112px;
-    padding: 24px 100px;
-    border: 1px solid;
+    
+  }
+
+  .team-container {
+    width: 1440px;
   }
 
   .team {
@@ -1223,6 +1241,11 @@ width: 338px;
     margin-right: 96px;
   }
 
+  .footer-soc-text {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
   .subscribe {
   }
 
@@ -1246,12 +1269,11 @@ width: 338px;
   }
 
   .modal-field {
-  width: 360px;
+    width: 360px;
     height: 58px;
-}
+  }
 
-.check-text {
-width: 338px;
-}
-
+  .check-text {
+    width: 338px;
+  }
 }
