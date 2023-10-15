@@ -220,7 +220,6 @@ address {
 .line-contacts {
 }
 .mob-address {
-  
 }
 .mob-address-list {
   margin-bottom: 48px;
@@ -598,7 +597,9 @@ address {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  width: max-content;
+
+  width: 100%;
+  align-items: flex-start;
 }
 
 .footer-container {
@@ -606,11 +607,9 @@ address {
   justify-content: center;
   flex-wrap: wrap;
   gap: 72px;
-  
 }
 
 .footer-container-box {
-  margin-right: 120px;
 }
 
 .footer-container-link {
@@ -621,6 +620,7 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 0 102px 0 102px;
 }
 
 .footer .footer-container-link {
@@ -635,11 +635,10 @@ address {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+
+  padding: 0 16px;
 }
 .footer-soc-box {
-  align-items: center;
-  margin-right: 120px;
 }
 
 .footer-soc-text {
@@ -649,6 +648,9 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .footer-soc-title {
@@ -686,21 +688,22 @@ address {
 }
 
 .subscribe-title {
+  display: flex;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-form {
-  display: flex;
-  gap: 24px;
 }
 
 .footer-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -711,6 +714,7 @@ address {
   letter-spacing: 0.04em;
   padding-left: 16px;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscribe-btn {
@@ -731,6 +735,7 @@ address {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .subscribe-icon {
@@ -766,8 +771,8 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f,
     0px 1px 2px 0px #00000033;
   border-radius: 4px;
@@ -814,10 +819,14 @@ address {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
+  width: 256px;
+  height: 48px;
 }
 
 .modal-field {
   margin-bottom: 8px;
+  width: 256px;
+  height: 58px;
 }
 
 .modal-label {
@@ -904,6 +913,7 @@ address {
 .check-text a {
   color: #4d5ae5;
   text-decoration-line: underline;
+  width: 231px;
 }
 
 .check-text-box {
@@ -1025,6 +1035,50 @@ address {
   .team-title-list {
     padding-right: 0;
   }
+  .footer-container {
+    align-items: flex-start;
+  }
+
+  .footer-container-box {
+  }
+
+  .footer-container-link {
+    padding: 0 24px;
+  }
+
+  .footer-container-text {
+    width: 264px;
+    height: 72px;
+  }
+
+  .subscribe-title {
+    justify-content: flex-start;
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+
+.modal {
+  width: 408px;
+  height: 584px;
+}
+
+  .modal-title {
+    width: 360px;
+    height: 24px;
+  }
+
+.modal-field {
+  width: 360px;
+    height: 58px;
+}
+
+.check-text {
+width: 338px;
+}
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1146,7 +1200,58 @@ address {
     width: calc((100% - 2 * 24px) / 3);
   }
 
-  .footer-container {
-    align-items: baseline;
+  .footer {
   }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .footer-container-box {
+    margin-right: 120px;
+  }
+
+  .footer-container-text {
+    width: 264px;
+  }
+
+  .footer-soc-box {
+    align-items: center;
+    margin-right: 96px;
+  }
+
+  .subscribe {
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+  .modal-title {
+    width: 360px;
+    height: 24px;
+  }
+
+  .modal-field {
+  width: 360px;
+    height: 58px;
+}
+
+.check-text {
+width: 338px;
+}
+
 }
