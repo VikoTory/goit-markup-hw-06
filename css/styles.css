@@ -415,7 +415,6 @@ address {
 /** ============= TEAM ============= */
 .team {
   width: 100%;
-  max-width: 1158px;
   background-color: #ffffff;
   background-color: #f4f4fd;
   padding-top: 96px;
@@ -514,7 +513,7 @@ address {
 
 /** ============= PORTFOLIO ============= */
 .portfolio {
-  padding-top: 96px 0;
+  padding: 96px 0;
   
 }
 
@@ -975,11 +974,22 @@ address {
   .container {
     max-width: 320px;
   }
+
+.footer-container-link {
+  justify-content: center;
+}
+
+.footer-soc-title {
+  margin: 0 40px;
+}
+
+
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    
   }
 
   .header-logo {
@@ -1043,6 +1053,7 @@ address {
 
   .team-container {
     width: 584px;
+    
   }
 
   .team-title-list {
@@ -1099,6 +1110,7 @@ address {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+    
   }
 
   .header-container {
@@ -1132,6 +1144,7 @@ address {
   }
 
   .solutions {
+    min-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1198,14 +1211,20 @@ address {
   .advantages-icon {
     
   }
+  
+.team {
+  
+    padding: 120px 0;
+    
+  }
 
   .team-container {
     width: 1440px;
+    
+    
   }
 
-  .team {
-    padding: 120px 0;
-  }
+  
 
   .team-title-list {
     gap: 24px;
